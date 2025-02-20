@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kendra Bestmann TSS Analysis Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Total Suspended Solids (TSS) Calculator</h2>
+        <p>Enter the required values to calculate TSS concentration.</p>
+
+        <label for="wf">Final weight of filter & residue (mg):</label>
+        <input type="number" id="wf" placeholder="Enter Wf" required>
+
+        <label for="wi">Initial weight of filter (mg):</label>
+        <input type="number" id="wi" placeholder="Enter Wi" required>
+
+        <label for="volume">Volume of water sample (L):</label>
+        <input type="number" id="volume" placeholder="Enter V" required>
+
+        <button onclick="calculateTSS()">Calculate TSS</button>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
